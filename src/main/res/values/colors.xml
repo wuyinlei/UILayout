@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5A86B3</color>
+    <color name="colorPrimaryDark">#5A86B3</color>
+    <color name="colorAccent">#5A86B3</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_color">#f1f1f1</color>
+    <color name="utton_text_color">#ffdde3e7</color>
+    <color name="present_text_color">#E65051</color>
+
+
+</resources>

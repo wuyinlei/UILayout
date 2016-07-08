@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_application_manager"
+            android:title="应用管理"></item>
+        <item
+            android:id="@+id/item_detection_update"
+            android:title="检测更新"></item>
+        <item
+            android:id="@+id/item_setting"
+            android:title="设置"></item>
+
+        <item
+            android:id="@+id/item_feed_back"
+            android:title="反馈"></item>
+        <item
+            android:id="@+id/item_about"
+            android:title="关于"></item>
+    </group>
+</menu>

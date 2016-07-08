@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="13dp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/avatar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:paddingRight="14dp">
+
+        <RelativeLayout
+            android:id="@+id/avatar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:padding="1.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/profile_account_avatar_bg" />
+
+            <ImageView
+                android:id="@+id/avatar_img_frame"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/profile_account_avatar_cover" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar_view"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@+id/avatar_view"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="立即登录"
+            android:textColor="@color/utton_text_color"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/account_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/profile_account_arrow_enter_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divid_line_1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/avatar_layout"
+        android:background="@mipmap/profile_list_divider"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/profile_account"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/avatar_layout"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/myaccount_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/profile_account_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/myaccount_log"
+            android:gravity="center_vertical"
+            android:text="我的账户"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/account_balance_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/account_title"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/activity_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/account_title"
+            android:gravity="center"
+            android:textColor="@color/present_text_color"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/profile_charge"
+            android:layout_width="40.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="充 值"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_gift_package"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_account"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/my_mounth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/profile_month_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/la_carte_log"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/my_mounth_icon"
+            android:gravity="center_vertical"
+            android:text="我的账户"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/vip_month_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/la_carte_log"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/month_arrow_icon_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/vip_month_endtime"
+            android:gravity="center"
+            android:textColor="@color/present_text_color"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/month_arrow_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/month_redtip"
+            android:layout_width="40.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="开 通"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/la_carte_account"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_gift_package"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/gift_package_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/profile_package_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/gift_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/gift_package_icon"
+            android:gravity="center_vertical"
+            android:text="我的超值包"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:id="@+id/gift_package_enter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divid_img"
+        android:layout_width="fill_parent"
+        android:layout_height="11dp"
+        android:layout_below="@+id/la_carte_account"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:id="@+id/profile_message"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/divid_img"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/profile_message_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/message_icon"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/profile_message_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@mipmap/bookshelf_news_newtip"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/profile_message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/profile_message_icon"
+            android:gravity="center_vertical"
+            android:text="我的消息"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/profile_message_enter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divide_line_7"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/profile_message"
+        android:background="@mipmap/profile_list_divider"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/profile_everyday_task"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/profile_message"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/profile_everydaytask_img_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/profile_history_icon"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/profile_everyday_task_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@mipmap/bookshelf_news_newtip"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/profile_everyday_task_info"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/profile_everydaytask_img_log"
+            android:gravity="center_vertical"
+            android:text="游览历史"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/profile_task_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divide_line_5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/profile_everyday_task"
+        android:background="@mipmap/profile_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/profile_history"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/divide_line_5"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/profile_history_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/profile_collection_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/profile_history_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/profile_history_icon"
+            android:gravity="center_vertical"
+            android:text="我的收藏"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/profile_history_enter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divide_line_6"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/profile_history"
+        android:background="@mipmap/profile_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/profile_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/divide_line_6"
+        android:background="@drawable/profile_list_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/profile_collection_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/my_gene"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/profile_collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@+id/profile_collection_icon"
+            android:gravity="center_vertical"
+            android:text="我的基因"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/profile_collection_enter_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:src="@mipmap/list_item_enter_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divide_line_8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/profile_collection"
+        android:background="@mipmap/profile_list_divider" />
+
+
+</RelativeLayout>
